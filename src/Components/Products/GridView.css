@@ -1,0 +1,12 @@
+.product-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 90px;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:0px) and (max-width:917px){
+    .product-list{
+        column-gap: 0px;
+    }
+}

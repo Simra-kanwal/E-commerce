@@ -1,0 +1,32 @@
+.error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #30076e;
+    color: white;
+}
+.error-page *{
+    margin-top: 20px;
+}
+.error-page img{
+    margin-bottom: 20px;
+    width: 590px;
+    height: 300px;
+    border-radius: 5px;
+}
+.errorbutton{
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    background: #8267b0;
+    color: white;
+    padding: 9px 10px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}

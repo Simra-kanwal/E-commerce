@@ -1,0 +1,81 @@
+.started{
+    padding: 30px 0px;
+    width: 750px;
+    margin-inline: auto;
+    margin-top: 20px;
+    background-color: rgb(235 235 235);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #00003f;
+    color: white;
+    font-size: 0.9rem;
+}
+.footer *{
+    margin-left: 30px;
+}
+.lorem{
+    width: 250px;
+}
+.lorem p:last-child{
+    margin-top: 10px;
+}
+.update{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.subscribebtn{
+    position: relative;
+    right:60px;
+    margin-top: 15px;
+}
+.footer input{
+    padding: 11px 10px;
+    outline: none;
+    margin-top: 15px;
+}
+.footericons{
+    position: relative;
+    right: 30px;
+    top: 10px;
+}
+
+@media screen and (min-width:0px) and (max-width:1020px) {
+    .footer{
+        justify-content: start;
+    }
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .call{
+        position: relative;
+        right: 25px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:800px) {
+    .started{
+        width: 80vw;
+    }
+}
+@media screen and (min-width:0px) and (max-width:500px) {
+    .started{
+       flex-direction: column;
+       gap: 20px;
+    }
+}

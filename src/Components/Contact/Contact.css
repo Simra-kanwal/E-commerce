@@ -1,0 +1,57 @@
+
+.contact h1{
+    text-align: center;
+    margin-top: 50px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.form{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    width: 450px;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 10px grey;
+}
+.inputField{
+    margin-block: 15px;
+}
+.inputField input{
+    padding: 12px;
+    font-size: 15px;
+    width: 95%;
+    margin-top: 5px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: #ececec;
+}
+.textarea textarea{
+    font-size: 17px;
+    padding: 10px;
+}
+.button button{
+    width: 100%;
+    padding: 12px 0px;
+    color: white;
+    background-color: #4acaff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:0px) and (max-width:570px){
+    .form{
+        width: 90vw;
+    }
+    .textarea textarea{
+        width: 95%;
+    }
+}

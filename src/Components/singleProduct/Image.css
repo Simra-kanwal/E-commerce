@@ -1,0 +1,38 @@
+.imageContainer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.main-Image{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+.singleImage{
+    width: 140px;
+    height: 90px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.singleImage:hover{
+    transform: scale(1.05);
+}
+@media screen and (min-width:0px) and (max-width:1100px){
+    .imageContainer{
+        flex-direction: column-reverse;
+    }
+    .more-images{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:0px) and (max-width:500px){
+ .main-Image{
+    width: 70vw;
+ } 
+}

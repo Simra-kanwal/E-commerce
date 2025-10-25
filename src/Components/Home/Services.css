@@ -1,0 +1,49 @@
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 20px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    background-color: rgb(235 235 235);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.services p{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.security{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235 235 235);
+    padding: 20px 40px;
+    margin-inline: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.security p{
+    position: relative;
+    bottom: 9px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width:0px) and (max-width:675px){
+    .service{
+        width: 100%;
+    }
+    .services-2{
+        width: 100%;
+    }
+    .security{
+        width: 100%;
+        margin-inline:0px;
+    }
+}

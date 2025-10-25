@@ -1,0 +1,60 @@
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.card-img{
+    width: 280px;
+    margin: auto;
+}
+.feature-pic{
+    width: 280px;
+    height: 160px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.feature-pic:hover{
+   opacity: 0.9;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.prize{
+    color: rgb(201, 3, 201);
+}
+@media screen and (min-width:0px) and (max-width:567px){
+    .card{
+        width: 60vw;
+    }
+    .card-img{
+        width: 57vw;
+    }
+    .feature-pic{
+        width: 57vw;
+        height: 180px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:400px){
+    .card{
+        width: 80vw;
+    }
+    .card-img{
+        width: 75vw;
+    }
+    .feature-pic{
+        width: 75vw;
+    }
+}

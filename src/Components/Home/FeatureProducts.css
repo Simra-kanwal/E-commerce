@@ -1,0 +1,21 @@
+.features{
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235 235 235);
+}
+.features p{
+    color: rgb(201, 3, 201);
+    text-align: center;
+}
+.features h1{
+    margin-top: 10px;
+    font-size: 37px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

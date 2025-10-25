@@ -1,0 +1,35 @@
+
+.colors{
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 100%;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.colors:hover{
+    opacity: 0.5;
+}
+.tick{
+    font-size: 20px;
+    color: white;
+}
+.itemsvalue{
+    padding-inline:7px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+}
+.green{
+    background-color: green;
+    margin-right: 15px;
+}
+.red{
+    background-color: red;
+    margin-left: 15px;
+}
