@@ -29,24 +29,24 @@ This project allows users to browse products, add them to their cart, and secure
 
 ## ⚙️ Installation & Setup
 
-# 1. Clone the repository
+### 1. Clone the repository
 ```bash
 git clone https://github.com/Simra-kanwal/E-commerce.git
 ```
 
-# 2. Navigate into the project directory
+### 2. Navigate into the project directory
 cd <your-repo-name>
 
-# 3. Install dependencies
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
-# 4. Start the development server
+### 4. Start the development server
 ```bash
 npm run dev
 ```
-# The app will locally run on
+### The app will locally run on
 ```bash
 http://localhost:5173
 ```
