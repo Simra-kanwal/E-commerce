@@ -35,7 +35,7 @@ git clone https://github.com/Simra-kanwal/E-commerce.git
 ```
 
 ### 2. Navigate into the project directory
-cd <your-repo-name>
+cd E-commerce
 
 ### 3. Install dependencies
 ```bash
