@@ -13,18 +13,18 @@ const Image = ({image = []}) => {
 
   return (
     <div className='imageContainer'>
-      <div className='more-images'>
-          {image.map((img,index) => {
+      <div className='more-image'>
+          {image && image.map((img,index) => {
               return(
                   <figure  key={index}>
-                      <img src={img.url} alt={img.filename} className='singleImage' onClick={() => setMainImage(img)}/>
+                      <img src={img} alt={img.filename} className='singleImage' onClick={() => setMainImage(img)}/>
                   </figure>
               )
           })}
       </div>
       <div>
       {mainImage ? (
-          <img src={mainImage.url} alt={mainImage.filename} className="main-Image" />
+          <img src={mainImage} alt={mainImage.filename} className="main-Image" />
         ) : (
           <p>Loading image...</p> 
         )}

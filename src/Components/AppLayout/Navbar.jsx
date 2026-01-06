@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const handleHamburger = () => {
     document.querySelector('nav ul').style.top="99%";
-    document.querySelector('.right-side').style.top="341%"
+    document.querySelector('.right-side').style.top="280%"
   }
 
   const handleClose = () => {

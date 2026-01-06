@@ -19,7 +19,7 @@ export const Provider = ({children}) => {
 
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  let url = "https://api.pujakaitem.com/api/products";
+  let url = "https://api.escuelajs.co/api/v1/products?offset=0&limit=21";
 
 // Get all products from api
      const getProducts = async (url) => {

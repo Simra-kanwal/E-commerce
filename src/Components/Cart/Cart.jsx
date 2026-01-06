@@ -10,8 +10,7 @@ const Cart = () => {
   
   // sum all the prices
   let totalValue;
-  let shippingFee = 50000;
-
+  let shippingFee = 500;
 
   {cart && cart.map((currElem) => {
     return  currElem.price * currElem.value
@@ -30,7 +29,7 @@ const Cart = () => {
             <p className='hide'>Remove</p>
         </div>
         <hr />
-        <h2 className={cart.length === 0 ? 'message' : ''}>{cart.length === 0 ? 'Cart is Empty' : ''}</h2>
+        <div className={cart.length === 0 ? 'message' : ''}>{cart.length === 0 ? 'Cart is Empty' : ''}</div>
         <div className="cart-data-container">
           {cart && cart.map((currElem) => {
             return (
@@ -49,10 +48,10 @@ const Cart = () => {
         </div>
         <div className="total-amount-container">
           <div className="total-amount">
-                  <p>Sub Total: <span><PriceFormat price={totalValue} /></span></p>
-                  <p>Shipping Fee: <span><PriceFormat price ={shippingFee} /></span></p>
+                  <p>Sub Total: <span>{totalValue}</span></p>
+                  <p>Shipping Fee: <span>{shippingFee}</span></p>
                   <hr />
-                  <p style={{marginTop:'10px'}}>Total Price: <span><PriceFormat price={totalValue + shippingFee} /></span></p>
+                  <p style={{marginTop:'10px'}}>Total Price: <span>{totalValue + shippingFee}</span></p>
           </div>
         </div>
       </div>

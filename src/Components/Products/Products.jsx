@@ -11,12 +11,14 @@ const Products = () => {
   const {filter_products} = useContext(FilterContext)
 
   return (
+    <div className="Products-container">
       <div className="product-list-container">
         <div className='main-products'>
           <Sort gridView={gridView} listView={listView} setGrid={setgridView} setList={setlistView} />
           <ProductList gridView={gridView} listView={listView} filterProducts={filter_products}/>
         </div>
       </div>
+    </div>
   )
 }
 

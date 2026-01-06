@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     padding: 100px 0px;
     position: relative;
 }
@@ -38,13 +39,12 @@
 }
 
 .shopping{
-    width: 500px;
-    height: 300px;
+    width: 450px;
+    height: 250px;
     border-radius: 5px;
-    margin-left: 70px;
 }
 
-@media screen and (min-width:0px) and (max-width:900px) {
+@media screen and (min-width:0px) and (max-width:768px) {
     #firstPart {
         flex-direction: column;
         align-items: center;
@@ -53,27 +53,16 @@
     }
 
     #firstPart .content {
-        width: 500px;
+        width: 90%;
         margin-right: 0px;
     }
 
-    .shopping {
-        margin-left: 0px;
-    }
-}
-@media screen and (min-width:0px) and (max-width:560px){
-    #firstPart .content {
-        width: 90%;
-    }
     .shopping-pic{
         text-align: center;
     }
+
     .shopping {
-        width: 90%;
-    }
-}
-@media screen and (min-width:0px) and (max-width:530px) {
-    .content h1 {
-        font-size: 32px;
+        width: 80%;
+        height: auto;
     }
 }

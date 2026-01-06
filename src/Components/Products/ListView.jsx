@@ -1,6 +1,5 @@
 import "./ListView.css";
 import { NavLink } from 'react-router';
-import PriceFormat from '../reusableComp/PriceFormat';
 
 const ListView = ({productsData}) => {
 
@@ -12,11 +11,11 @@ const ListView = ({productsData}) => {
                         <ul key={productList.id}>
                             <NavLink to={`singleProduct/${productList.id}`} className='list-card'>
                                 <div>
-                                    <img src={productList.image} alt="" className="list-pic" />
+                                    <img src={productList.images[0]} alt="" className="list-pic" />
                                 </div>
                                 <div className='list-details'>
-                                    <p className='list-name'>{productList.name}</p>
-                                    <p><PriceFormat price={productList.price} /></p>
+                                    <p className='list-name'>{productList.title}</p>
+                                    <p>Price: {productList.price}Rs</p>
                                     <p>{productList.description.slice(0,99)}...</p>
                                     <button>Read More</button>
                                 </div>

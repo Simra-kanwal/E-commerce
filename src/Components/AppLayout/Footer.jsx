@@ -25,7 +25,7 @@ const Footer = () => {
 
       <div className="footer">
         <div className='lorem'>
-          <p>Ecommerece Application</p>
+          <p>Ecommerce Application</p>
           <p>Lorem ipsum dolor sit, amet consectetur adi elit.</p>
         </div>
         <div className='update'>

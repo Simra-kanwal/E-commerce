@@ -3,33 +3,28 @@ const CartReducer = (state,action) => {
 
         //add data to cart
         case "ADD_TO_CART":
-        const {id,tick,value,Product} = action.payload;
+        const {id,value,Product} = action.payload;
 
         if (!id || !Product) {
             console.error("Invalid payload for ADD_TO_CART:", action.payload);
-            return state; // Return the current state if payload is invalid
+            return state; 
         } 
 
-        const cartId = `${id}${tick}`;
+        const cartId = `${id}${value}`;
         
         //handle existing products
         const existingProducts = state.cart.find(
             (currElem) => currElem && currElem.id === cartId)
            if(existingProducts){
                 let updatedProduct = state.cart.map((currElem) => {
-                    if(currElem && currElem.id == id + tick){
+                    if (currElem && currElem.id === cartId) {
                         let newAmount = currElem.value + value;
-                        // to handle stock value in increment
-                        if (newAmount >= currElem.max){
-                            newAmount = currElem.max;
-                        }
                         return {
                             ...currElem,
                             value: newAmount,
-                        } 
-                    } 
-                    else{
-                        return{
+                        }
+                    } else {
+                        return {
                             ...currElem,
                         }
                     }
@@ -43,12 +38,10 @@ const CartReducer = (state,action) => {
            let cartProduct;
            cartProduct = {
             id: cartId, 
-            name: Product.name,
-            tick,
+            name: Product.title,
             value,
             price: Product.price,
-            max: Product.stock,
-            image: Product.image[0].url,
+            image: Product.images[0],
            }
            return {
                ...state,
@@ -79,8 +72,8 @@ const CartReducer = (state,action) => {
             let updatedDecrement = state.cart.map((currElem) => {
                if(  currElem && currElem.id === action.payload ){
                 let decrement = currElem.value - 1;
-                if(decrement < 1){
-                    decrement = 1;
+                if(decrement < 0){
+                    decrement = 0;
                 }
                 return {
                    ...currElem,

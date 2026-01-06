@@ -15,6 +15,9 @@
     padding-inline: 33px;
     padding-block: 20px;
 }
+.productDetails{
+    width:40%;
+}
 .productPrice{
     font-weight: bold;
 }
@@ -37,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
+    justify-content: start;
     margin-block:20px;
 }
 .warrenty-data{
@@ -51,16 +54,17 @@
     font-size: 13px;
     margin-top: 10px;
 }
-.product-data-info p:last-child{
-    margin-top: 10px;
-}
-.product-data-info span{
-    font-weight: bold;
-}
 
-@media screen and (min-width:0px) and (max-width:1100px){
+@media screen and (min-width:0px) and (max-width:1010px){
     .mainContent{
         flex-direction: column;
+    }
+    .productDetails{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        margin-top: 20px;
     }
 }
 @media screen and (min-width:0px) and (max-width:786px){

@@ -32,6 +32,9 @@
     justify-content: space-between;
     margin-top: 10px;
 }
+.details .name{
+    width: 90%;
+}
 .prize{
     color: rgb(201, 3, 201);
 }

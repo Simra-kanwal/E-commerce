@@ -20,11 +20,12 @@
 .singleImage:hover{
     transform: scale(1.05);
 }
+
 @media screen and (min-width:0px) and (max-width:1100px){
     .imageContainer{
         flex-direction: column-reverse;
     }
-    .more-images{
+    .more-image{
         display: flex;
         justify-content: center;
         gap: 20px;
